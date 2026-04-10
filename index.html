@@ -10,28 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        sans: ['Mitr', 'sans-serif'],
-                    },
+                    fontFamily: { sans: ['Mitr', 'sans-serif'] },
                     colors: {
                         cream: '#FFFDF0',
-                        pinky: {
-                            light: '#FEF9C3',
-                            DEFAULT: '#FDE047',
-                            dark: '#EAB308'
-                        },
-                        brown: {
-                            light: '#854D0E', 
-                            DEFAULT: '#422006', 
-                            dark: '#1C1917'   
-                        }
+                        pinky: { light: '#FEF9C3', DEFAULT: '#FDE047', dark: '#EAB308' },
+                        brown: { light: '#854D0E', DEFAULT: '#422006', dark: '#1C1917' }
                     },
                     boxShadow: {
                         'soft': '0 4px 20px -2px rgba(253, 224, 71, 0.3)',
@@ -47,16 +36,8 @@
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #FFFDF0; }
         ::-webkit-scrollbar-thumb { background: #FDE047; border-radius: 10px; }
-        
-        /* Animations */
         @keyframes float { 0%, 100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-15px) rotate(5deg); } }
-        
-        /* ✨ ลูกเล่นอิโมจิกระพริบช้าๆ */
-        @keyframes twinkle {
-            0%, 100% { opacity: 0.2; transform: scale(0.8); }
-            50% { opacity: 0.8; transform: scale(1.1); }
-        }
-        
+        @keyframes twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.8); } 50% { opacity: 0.8; transform: scale(1.1); } }
         .animate-float { animation: float 4s ease-in-out infinite; }
         .animate-float-delayed { animation: float 4s ease-in-out 2s infinite; }
         .animate-twinkle { animation: twinkle 4s ease-in-out infinite; }
@@ -84,13 +65,11 @@
         <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
             <svg class="absolute top-[2%] left-[8%] w-10 h-10 text-pinky-dark animate-float opacity-30" viewBox="0 0 24 24"><use href="#icon-teddy"></use></svg>
             <svg class="absolute top-[7%] right-[12%] w-9 h-9 animate-float-delayed opacity-40" viewBox="0 0 100 100"><use href="#icon-button"></use></svg>
-            
             <span class="absolute top-[15%] left-[20%] text-xl animate-twinkle">✨</span>
             <span class="absolute top-[35%] right-[15%] text-lg animate-twinkle-slow" style="animation-delay: 1s;">✨</span>
             <span class="absolute top-[55%] left-[10%] text-2xl animate-twinkle" style="animation-delay: 2s;">✨</span>
             <span class="absolute top-[75%] right-[25%] text-xl animate-twinkle-slow" style="animation-delay: 1.5s;">✨</span>
             <span class="absolute top-[90%] left-[30%] text-lg animate-twinkle" style="animation-delay: 0.5s;">✨</span>
-
             <svg class="absolute top-[48%] right-[10%] w-11 h-11 animate-float-delayed opacity-40" viewBox="0 0 100 100"><use href="#icon-button"></use></svg>
         </div>
 
@@ -104,18 +83,13 @@
                     <i data-lucide="palette" class="w-4 h-4 text-pinky-dark fill-pinky-dark"></i>
                 </div>
             </div>
-
             <div class="flex-1 text-left relative z-10">
                 <div class="flex items-center gap-2 mb-1 opacity-80">
                     <i data-lucide="sparkles" class="w-4 h-4 text-pinky-dark fill-pinky-dark"></i>
                     <i data-lucide="brush" class="w-4 h-4 text-brown"></i>
                 </div>
-                <h1 class="text-[18px] leading-tight font-bold text-brown mb-2 relative">
-                    เพ้นท์ชุดร้านบอแบบเริ่ดสะแมนแตน
-                </h1>
-                <p class="text-brown-light text-[10px] leading-relaxed font-medium bg-white inline-block px-3 py-1.5 rounded-2xl shadow-sm border border-pinky-light">
-                    ♡ รับเพ้นท์เสื้อเกม heartopia ᵕ̈˚౨ৎ
-                </p>
+                <h1 class="text-[18px] leading-tight font-bold text-brown mb-2 relative">เพ้นท์ชุดร้านบอแบบเริ่ดสะแมนแตน</h1>
+                <p class="text-brown-light text-[10px] leading-relaxed font-medium bg-white inline-block px-3 py-1.5 rounded-2xl shadow-sm border border-pinky-light">♡ รับเพ้นท์เสื้อเกม heartopia ᵕ̈˚౨ৎ</p>
             </div>
         </header>
         <main class="px-6 py-8 space-y-12 relative z-10">
@@ -125,10 +99,7 @@
                     <i data-lucide="music" class="w-5 h-5 text-pinky-dark"></i>
                     ยินดีต้อนรับสู่ร้านบอแบบเริ่ด
                 </h2>
-                <p class="text-sm leading-relaxed text-brown-light italic">
-                    🐰 🎧ྀི✮˚ราคาเริ่มต้น 59.- <br>
-                    ₊˚⊹♡ ชุดเดรสราคาเริ่มต้น 259.-
-                </p>
+                <p class="text-sm leading-relaxed text-brown-light italic">🐰 🎧ྀི✮˚ราคาเริ่มต้น 59.- <br> ₊˚⊹♡ ชุดเดรสราคาเริ่มต้น 259.-</p>
                 <div class="flex flex-wrap justify-center gap-2 mt-3">
                     <span class="text-xs bg-white border border-pinky text-brown px-3 py-1 rounded-full shadow-sm">เสื้อยืด/กล้าม</span>
                     <span class="text-xs bg-white border border-pinky text-brown px-3 py-1 rounded-full shadow-sm">เสื้อสเวกเตอร์</span>
@@ -138,7 +109,7 @@
 
             <section class="bg-pinky/30 rounded-3xl p-6 relative shadow-card border border-white">
                 <h2 class="text-xl font-medium mb-4 text-center text-brown">ตัวอย่างผลงาน</h2>
-                <div class="grid grid-cols-1 gap-3">
+                <div class="grid grid-cols-1 gap-3 mb-4">
                     <a href="https://drive.google.com/drive/folders/1XiATR_RmiE3dflf3Rb1uY3Rsu1M1ACI7" target="_blank" class="bg-white border-2 border-dashed border-pinky hover:bg-pinky-light transition-all rounded-2xl p-4 flex items-center justify-between shadow-sm group">
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 shrink-0 rounded-full bg-cream border border-pinky flex items-center justify-center">
@@ -149,14 +120,21 @@
                         <i data-lucide="external-link" class="w-5 h-5 text-pinky"></i>
                     </a>
                 </div>
+
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="rounded-xl overflow-hidden border-2 border-white shadow-sm">
+                        <img src="https://i.postimg.cc/GtsgvQpD/att-mi-Ng-Tu-KHOlq8Msx-J-x-MFCe-QPq7Tf-XDe-XWhkj-Rzo-N6ws.jpg" alt="Work Example 1" class="w-full h-auto object-cover">
+                    </div>
+                    <div class="rounded-xl overflow-hidden border-2 border-white shadow-sm">
+                        <img src="https://i.postimg.cc/SxyFbBsJ/att-m-Xbv-TFfo2-HDCI6v-JCc2Dz-UAEhae-LKs6r-OPlh-D3zjf-I.jpg" alt="Work Example 2" class="w-full h-auto object-cover">
+                    </div>
+                </div>
             </section>
 
             <section class="relative">
                 <h2 class="text-xl font-medium mb-4 flex items-center gap-2 border-b-2 border-pinky-light pb-2 text-brown">
-                    <i data-lucide="shopping-bag" class="w-5 h-5 text-pinky-dark"></i>
-                    🎨 รายการที่รับทำ
+                    <i data-lucide="shopping-bag" class="w-5 h-5 text-pinky-dark"></i> 🎨 รายการที่รับทำ
                 </h2>
-                
                 <div class="space-y-5">
                     <div class="bg-white rounded-3xl shadow-card p-6 border-2 border-pinky-light">
                         <div class="flex justify-between border-b border-dashed border-pinky/50 pb-3 mb-4">
@@ -165,7 +143,6 @@
                         </div>
                         <p class="text-xs text-brown-light">เสื้อยืด, เสื้อกล้าม, เสื้อสเวกเตอร์ (ราคาตามรายละเอียด)<br>ไม่มีแบบให้ copy วาดใหม่เริ่มต้น 99.-</p>
                     </div>
-
                     <div class="bg-white rounded-3xl shadow-card p-6 border-2 border-pinky-dark">
                         <div class="flex justify-between border-b border-dashed border-pinky-dark/40 pb-3 mb-4">
                             <span class="font-medium text-pinky-dark">യ เพ้นท์เดรส</span>
@@ -183,10 +160,7 @@
                 </div>
                 <div class="bg-white rounded-2xl p-5 shadow-sm border border-pinky-light">
                     <h3 class="font-medium mb-2 text-sm text-brown flex items-center gap-1"><i data-lucide="shield-alert" class="w-4 h-4"></i> กฎร้าน</h3>
-                    <ul class="text-[10px] text-brown-light space-y-1">
-                        <li>• งดจิก/เร่งงาน</li>
-                        <li>• มัดจำตามตกลง</li>
-                    </ul>
+                    <ul class="text-[10px] text-brown-light space-y-1"><li>• งดจิก/เร่งงาน</li><li>• มัดจำตามตกลง</li></ul>
                 </div>
             </section>
 
@@ -205,9 +179,6 @@
         </footer>
 
     </div>
-
-    <script>
-        lucide.createIcons();
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
